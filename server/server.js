@@ -29,7 +29,7 @@ app.use(cookieParser())
 app.use(morgan('dev'))
 app.use(express.urlencoded({ extended: true }))
 //app.use(cors({ origin: true, credentials: true }))
-app.use(cors({origin:["https://cinemabooking-website-front.vercel.app/"],
+app.use(cors({origin:["https://cinemabooking-website-front-p7k0nv96n-harishs-projects-3a3428c3.vercel.app/"],
        methods:["POST","GET"],
 	   credentials:true}))
 app.use(mongoSanitize())
