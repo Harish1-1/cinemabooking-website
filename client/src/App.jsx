@@ -14,7 +14,7 @@ import Showtime from './pages/Showtime'
 import Tickets from './pages/Tickets'
 import User from './pages/User'
 
-axios.defaults.baseURL = 'https://cinemabooking-website.vercel.app/movie/showing' || 'http://localhost:8080'
+axios.defaults.baseURL = 'https://cinemabooking-website.vercel.app' || 'http://localhost:8080'
 axios.defaults.withCredentials = true
 
 function App() {
