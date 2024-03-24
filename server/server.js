@@ -27,10 +27,10 @@ const app = express()
 app.use(cookieParser())
 app.use(morgan('dev'))
 app.use(express.urlencoded({ extended: true }))
-//app.use(cors({ origin: true, credentials: true }))
-app.use(cors({origin:["https://cinemabooking-website-front.vercel.app"],
-       methods:["POST","GET"],
-	   credentials:true}))
+app.use(cors({ origin: true, credentials: true }))
+//app.use(cors({origin:["https://cinemabooking-website-front.vercel.app"],
+       //methods:["POST","GET"],
+	   //credentials:true}))
 app.use(express.json())
 app.use(mongoSanitize())
 app.use(helmet())
