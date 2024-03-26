@@ -16,7 +16,7 @@ const showtime = require('./routes/showtime')
 
 mongoose.set('strictQuery', false)
 mongoose
-	.connect(process.env.DATABASE, { autoIndex: true })
+	.connect('mongodb+srv://gundaharishkumar2:Harish@cluster0.xn7houi.mongodb.net/', { autoIndex: true })
 	.then(() => {
 		console.log('mongoose connected!')
 	})
