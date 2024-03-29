@@ -16,7 +16,7 @@ const showtime = require('./routes/showtime')
 
 mongoose.set('strictQuery', false)
 mongoose
-	.connect('mongodb+srv://gundaharishkumar2:Harish12@cluster0.xn7houi.mongodb.net/', { autoIndex: true })
+	.connect('mongodb+srv://gundaharishkumar2:Harish12@cluster0.xn7houi.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0', { autoIndex: true })
 	.then(() => {
 		console.log('mongoose connected!')
 	})
