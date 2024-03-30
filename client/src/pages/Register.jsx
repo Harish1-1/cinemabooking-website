@@ -68,7 +68,7 @@ const Register = () => {
 						className={inputClasses`${errors.email ? 'border-red-500' : ''}`}
 						placeholder="Email"
 					/>
-					{errors.username && <span className="text-sm text-red-500">Email is required</span>}
+					{errors.email && <span className="text-sm text-red-500">Email is required</span>}
 					<input
 						name="password"
 						type="password"
@@ -80,7 +80,7 @@ const Register = () => {
 								message: 'Password must be at least 6 characters long'
 							}
 						})}
-						className={inputClasses`${errors.password ? 'border-red-500' : ''}`}
+						className={`${inputClasses()} ${errors.username ? 'border-red-500' : ''}`}
 						placeholder="Password"
 					/>
 					{errors.password && <span className="text-sm text-red-500">{errors.password?.message}</span>}
